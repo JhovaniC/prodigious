@@ -1,0 +1,15 @@
+{
+    "name": "Prodigious Test",
+    "description": "Prodigious Test",
+    "author": {
+        "name": "Jhovani Cuadros",
+        "email": "angelus985@gmail.com"
+    },
+    "dependencies": {
+        "jquery": "2.x",
+        "jquery-ui": "1.10.x",
+        "bootstrap": "3.x",
+        "angular": "~1.2"
+    },
+    "private": true
+}

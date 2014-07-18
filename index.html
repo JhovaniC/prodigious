@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Prodigious Test</title>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body ng-controller="mainCtrl">
+        <div class="container">
+            <div class="row header">
+                <div class="col-lg-12 col-md-12 col-xs-12">
+                    <h1 class="album-title text-center">{{ album.name }}</h1>
+                </div>
+            </div>
+            <div class="row body">
+                <div class="col-lg-12 col-md-12 col-xs-12 main-content">
+                    <div class="">
+                        <img ng-src="{{ image }}" alt="{{ photo.title }}"/>
+                    </div>
+                </div>
+            </div>
+            <div class="row footer">
+                <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                    <img ng-repeat="photo in photos" ng-click="showImage(photo)" ng-src="images/{{ photo.thumb_url }}" alt="{{ photo.title }}"/>
+                </div>
+            </div>
+        </div>
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>

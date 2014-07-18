@@ -1,0 +1,53 @@
+/*
+ * Main CSS file
+ */
+
+/* Fonts */
+@font-face {
+    font-family: NeoSansIntel;
+    src: url('../fonts/NeoSansIntel.ttf');
+}
+/* Fonts */
+
+/* Common */
+body {
+    color: #feff01;
+    font-family: NeoSansIntel, monospace;
+}
+
+/* Header */
+.header {
+    background: #0161b2;
+}
+
+/* Body */
+.main-content {
+    background: no-repeat url("../images/img_7389.jpeg");
+    min-height: 420px;
+    padding: 20px;
+}
+
+/* Footer */
+.footer {
+    background: #117ec3;
+    min-height: 110px;
+}
+.footer > div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer > div > img {
+    box-shadow: 3px -2px 5px #000;
+    -webkit-box-shadow: 3px -2px 5px #000;
+    -o-box-shadow: 3px -2px 5px #000;
+    -ms-box-shadow: 3px -2px 5px #000;
+}
+.footer > div > img:hover {
+    border: 1px solid #feff01;
+    transform: scale(1.2,1.2);
+    -webkit-transform: scale(1.2,1.2);
+    -moz-transform: scale(1.2,1.2);
+    -o-transform: scale(1.2,1.2);
+    -ms-transform: scale(1.2,1.2);
+    cursor: pointer;
+}
