@@ -16,14 +16,25 @@
             </div>
             <div class="row body">
                 <div class="col-lg-12 col-md-12 col-xs-12 main-content">
-                    <div class="">
-                        <img ng-src="{{ image }}" alt="{{ photo.title }}"/>
+                    <div class="overlay">
+                        <div class="text-center">
+                            <img class="img-responsive img-rounded center-block" ng-src="{{ image }}" alt="{{ photo.title }}"/>
+                            <a class="left carousel-control" href="" ng-click="showImage(prevPhoto)">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="right carousel-control" href="" ng-click="showImage(nextPhoto)">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a>
+                            <h3>{{ photo.title }}</h3>
+                            <h4>Taken at the Intel Conference in {{ photo.location }} on {{ photo.date }}</h4>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="row footer">
                 <div class="col-lg-12 col-md-12 col-xs-12 text-center">
-                    <img ng-repeat="photo in photos" ng-click="showImage(photo)" ng-src="images/{{ photo.thumb_url }}" alt="{{ photo.title }}"/>
+                    <img id="{{ photo.id }}" class="img-thumbnail" ng-repeat="photo in photos" ng-click="showImage(photo)"
+                         ng-src="images/{{ photo.thumb_url }}" ng-class="{ active: (photo.id == 1)}" alt="{{ photo.title }}"/>
                 </div>
             </div>
         </div>

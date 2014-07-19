@@ -18,12 +18,27 @@ body {
 /* Header */
 .header {
     background: #0161b2;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #000;
 }
 
 /* Body */
 .main-content {
     background: no-repeat url("../images/img_7389.jpeg");
-    min-height: 420px;
+    min-height: 510px;
+}
+.main-content img {
+    border: 1px solid #ffffff;
+}
+.overlay {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(200, 200, 200, 0.85);
+    z-index:1000;
     padding: 20px;
 }
 
@@ -31,6 +46,9 @@ body {
 .footer {
     background: #117ec3;
     min-height: 110px;
+    border-top: 5px solid #ffffff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 .footer > div {
     padding-top: 20px;
@@ -42,6 +60,7 @@ body {
     -o-box-shadow: 3px -2px 5px #000;
     -ms-box-shadow: 3px -2px 5px #000;
 }
+.footer > div > img.active,
 .footer > div > img:hover {
     border: 1px solid #feff01;
     transform: scale(1.2,1.2);
