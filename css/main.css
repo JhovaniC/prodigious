@@ -7,12 +7,36 @@
     font-family: NeoSansIntel;
     src: url('../fonts/NeoSansIntel.ttf');
 }
+@font-face {
+    font-family: NeoSansIntel-Italic;
+    src: url('../fonts/NeoSansIntel-Italic.ttf');
+}
+@font-face {
+    font-family: NeoSansIntel-Light;
+    src: url('../fonts/NeoSansIntel-Light.ttf');
+}
+@font-face {
+    font-family: NeoSansIntel-LightItalic;
+    src: url('../fonts/NeoSansIntel-LightItalic.ttf');
+}
+@font-face {
+    font-family: NeoSansIntel-Medium;
+    src: url('../fonts/NeoSansIntel-Medium.ttf');
+}
+@font-face {
+    font-family: NeoSansIntel-MediumItalic;
+    src: url('../fonts/NeoSansIntel-MediumItalic.ttf');
+}
+@font-face {
+    font-family: Nexa-Light;
+    src: url('../fonts/Nexa%20Light.otf');
+}
 /* Fonts */
 
 /* Common */
 body {
     color: #feff01;
-    font-family: NeoSansIntel, monospace;
+    font-family: NeoSansIntel-Medium, monospace;
 }
 
 /* Header */
@@ -30,6 +54,12 @@ body {
 }
 .main-content img {
     border: 1px solid #ffffff;
+}
+.photo-title {
+    font-family: NeoSansIntel, monospace;
+}
+.photo-description {
+    font-family: NeoSansIntel-Light, monospace;
 }
 .overlay {
     position:absolute;
